@@ -26,11 +26,9 @@ Practicar el uso de métodos de los objetos preconstruidos String y Math para ma
 
 - Genera un número aleatorio de dos dígitos. Para ello, puedes combinar `Math.random()` con `Math.floor()`.
 
-_Pista: Math.random() da un número entre 0 y 0.99... Si lo multiplicas por 90 (Math.random() \* 90), obtendrás un número entre 0 y 89.99... Al redondearlo hacia abajo con Math.floor() y sumarle 10, obtendrás un número entero entre 10 y 99._
-
 #### Ensamblaje y Muestra del Resultado:
 
-- Une la inicial del nombre, los primeros caracteres del apellido y el número aleatorio para formar el nombre de usuario final. Puedes usar el `operador +` o el método `concat()`
+- Une la inicial del nombre, los primeros caracteres del apellido y el número aleatorio para formar el nombre de usuario final. Puedes usar el operador `+` o el método `concat()`
 
 - Muestra el resultado final en la consola `console.log()` con un mensaje claro.
 
