@@ -4,19 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Names generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
-    <header>
+  <body data-bs-theme="dark">
+    <header class="container m-4">
       <h1>Generador de Nombres</h1>
     </header>
-    <main>
-      <p>Al cargar la página:</p>
-      <ul>
-        <li>Ingresa tu primer Nombre</li>
-        <li>Ingresa tu primer Apellido</li>
-        <li>Inspecciona la consola para ver tu nombre de usuario</li>
-      </ul>
+    <main class="container">
+      <form class="row row-cols-1 g-3">
+        <label class="col m-2">
+          Insert your first name:
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+          />
+          <p class="text-warning" id="name-error" hidden>
+            Error: First name cannot contains numbers or special characters
+          </p>
+        </label>
+        <label class="col m-2">
+          Insert your last name:
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+          />
+          <p class="text-warning" id="lastName-error" hidden>
+            Error: Last name cannot contains numbers or special characters
+          </p>
+        </label>
+        <button class="col-4 m-2" id="form-btn" type="submit">Send</button>
+      </form>
+      <section class="row" id="data-section"></section>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
